@@ -83,6 +83,8 @@ export default (props) => {
         <StartupConnected>
           <Switch>
             <Route exact path="/" component={() => <DummyView />} />
+            <Route exact path="/planet/:planetId" component={() => <DummyView />} />
+
             <Route exact path="/dashboard" component={() => <Home />} />
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
             <Route component={() => <NotFound />} />
